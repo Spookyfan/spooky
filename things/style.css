@@ -112,7 +112,7 @@ ul, li{
 	list-style: none;
 }
 #menu_icon{
-	position: absolute;
+	position: fixed;
 	top: 30px;
 	left: 30px;
 	width: 30px;
