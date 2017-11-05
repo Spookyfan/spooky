@@ -1,0 +1,132 @@
+﻿body{
+	margin: 0%;
+	padding: 0%;
+	height: 100%;
+	width: 100%;
+    background-color: #0D0D0D;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent; 
+}
+a {
+    color: white;
+	background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #cd3236;
+}
+main{
+	background-color: #0D0D0D;
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	margin-top: 100px;
+	width: 100%;
+    height: calc(100% - 100px);
+	transition: margin-left 0.25s;
+	text-align: center;
+}
+#content_form{
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    top: 200px;
+    left: 750px;
+}
+.content{
+	position: relative;
+	background-color: #1C1C1C;
+	width: 300px;
+	height: 150px;
+	margin: 50px;
+	display: inline-block;
+}
+.content_details{
+	margin: auto auto;
+    padding: 50px;
+}
+th,td {
+    padding: 10px;
+    background-color: #1C1C1C;
+    font-size: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+}  
+header{
+	position: fixed;
+	width: 100%;
+	height: 100px;	
+	z-index: 1;
+	background-color: #1C1C1C;
+	color: whitesmoke;
+	text-align: center;
+	display: table;
+}
+h1{
+	font-size: 300%;
+	display: table-cell;
+	vertical-align: middle;
+}
+hr{
+	width: 80%;
+	border: 0px;
+	border-top: 1px solid #8B8B8B;
+}
+nav{
+	position: fixed;
+    width: 0px;
+	height: 100%;
+	top: 100px;
+	background-color: #151515;
+	color: white;
+	text-align: center;
+	font-size: 200%;
+	overflow: scroll;
+	transition: width 0.25s;
+	display: block;
+}
+nav a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+}
+.nav:hover {
+    background-color: #1C1C1C;
+}
+th img{
+	max-height: 200px;
+	min-height: 150px;
+	max-width: auto;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+ul, li{
+	list-style: none;
+}
+#menu_icon{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 30px;
+	height: 30px;
+    z-index: 2;
+}
+.menu_icon{
+	width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+@keyframes header_font{
+	33% { color: green; }
+	67% { color: blue; }
+	100% { color: red; }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Hardware </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="things/style.css">
+		<script>
+			function displayNav(){
+					document.getElementsByTagName("nav")[0].style.width = "250px";
+					document.getElementsByTagName("main")[0].style.marginLeft = "250px";				
+            }
+			function closeNav(){
+                    document.getElementsByTagName("nav")[0].style.width = "0px";
+                    document.getElementsByTagName("main")[0].style.marginLeft = "0px";
+                }
+		</script>
+	</head>
+	<body>
+		<header onclick="closeNav()">
+			<h1> Home </h1>
+		</header>
+        <div id="menu_icon" onclick="displayNav()">
+            <div class="menu_icon"></div>
+            <div class="menu_icon"></div>
+            <div class="menu_icon"></div>
+        </div>
+		<main onclick="closeNav()">
+            <br>
+            <p>Auf dieser Seite finden sie die Spezifikationen von gewissen Prozessoren.</p>
+            <br>
+		</main>
+		<footer>		
+		</footer>
+		<nav>
+            <br>
+            <div class = "nav"> <a href="index.html"> Home </a> </div>
+            <div class = "nav"> <a href="html/AMD.html"> AMD </a> </div>
+            <div class = "nav"> <a href="html/intel.html"> Intel </a> </div>
+            <div class = "nav"> <a href="html/formular.html"> Formular </a> </div>
+            <hr>
+		</nav>
+	</body>
+</html>

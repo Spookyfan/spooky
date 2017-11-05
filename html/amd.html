@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Hardware - Info </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../things/style.css">
+		<script>
+			function displayNav(){
+					document.getElementsByTagName("nav")[0].style.width = "250px";
+					document.getElementsByTagName("main")[0].style.marginLeft = "250px";				
+            }
+			function closeNav(){
+                    document.getElementsByTagName("nav")[0].style.width = "0px";
+                    document.getElementsByTagName("main")[0].style.marginLeft = "0px";
+                }
+		</script>
+	</head>
+	<body>
+		<header onclick="closeNav()">
+			<h1> Prozessoren </h1>
+		</header>
+        <div id="menu_icon" onclick="displayNav()">
+            <div class="menu_icon"></div>
+            <div class="menu_icon"></div>
+            <div class="menu_icon"></div>
+        </div>
+        <main onclick="closeNav()">
+            <br>
+            <figure><img src="../pictures/AMD_Logo.svg.png" width="500" height="120"></figure>
+            <table class="content_details">
+                <tr>
+                    <th rowspan="10"> <img src="../pictures/amd_ryzen7.png"> </th>
+                    <th> Details </th>
+                    <th> Ryzen 7 1700 </th>
+                    <th> Ryzen 7 1700X </th>
+                    <th> Ryzen 7 1800X </th>
+                </tr>
+                <tr>
+                    <td> Kerne/Threads </td>
+                    <td> 8/16 </td>
+                    <td> 8/16 </td>
+                    <td> 8/16 </td>
+                </tr>
+                <tr>
+                    <td> Takt </td>
+                    <td> 3.00Ghz </td>
+                    <td> 3.40Ghz </td>
+                    <td> 3.60Ghz </td>
+                </tr>
+                <tr>
+                    <td> Turbotakt </td>
+                    <td> 3.70Ghz </td>
+                    <td> 3.80Ghz </td>
+                    <td> 4.00Ghz </td>
+                </tr>
+                <tr>
+                    <td> Sockel </td>
+                    <td> AM4 </td>
+                    <td> AM4 </td>
+                    <td> AM4 </td>
+                </tr>
+                <tr>
+                    <td> L2 Cache </td>
+                    <td> 8x 512kB </td>
+                    <td> 8x 512kB </td>
+                    <td> 8x 512kB </td>
+                </tr>
+                <tr>
+                    <td> L3 Cache </td>
+                    <td> 16MB </td>
+                    <td> 16MB </td>
+                    <td> 16MB </td>
+                </tr>
+                <tr>
+                    <td> TDP </td>
+                    <td> 65W </td>
+                    <td> 95W </td>
+                    <td> 95W </td>
+                </tr>
+                <tr>
+                    <td> Preis </td>
+                    <td> 288€ </td>
+                    <td> 299€ </td>
+                    <td> 399€ </td>
+                </tr>
+            </table>
+            <table class="content_details">
+                <tr>
+                    <th rowspan="10"> <img src="../pictures/amd_ryzen5.png"> </th>
+                    <th> Details </th>
+                    <th> Ryzen 5 1400 </th>
+                    <th> Ryzen 5 1500X </th>
+                    <th> Ryzen 5 1600 </th>
+                    <th> Ryzen 5 1600X </th>
+                </tr>
+                <tr>
+                    <td> Kerne/Threads </td>
+                    <td> 4/8 </td>
+                    <td> 4/8 </td>
+                    <td> 6/12 </td>
+                    <td> 6/12 </td>
+                </tr>
+                <tr>
+                    <td> Takt </td>
+                    <td> 3.20Ghz </td>
+                    <td> 3.50Ghz </td>
+                    <td> 3.20Ghz </td>
+                    <td> 3.60Ghz </td>
+                </tr>
+                <tr>
+                    <td> Turbotakt </td>
+                    <td> 3.40Ghz </td>
+                    <td> 3.70Ghz </td>
+                    <td> 3.60Ghz </td>
+                    <td> 4.00Ghz </td>
+                </tr>
+                <tr>
+                    <td> Sockel </td>
+                    <td> AM4 </td>
+                    <td> AM4 </td>
+                    <td> AM4 </td>
+                    <td> AM4 </td>
+                </tr>
+                <tr>
+                    <td> L2 Cache </td>
+                    <td> 4x 512kB </td>
+                    <td> 4x 512kB </td>
+                    <td> 6x 512kB </td>
+                    <td> 6x 512kB </td>
+                </tr>
+                <tr>
+                    <td> L3 Cache </td>
+                    <td> 8MB </td>
+                    <td> 16MB </td>
+                    <td> 16MB </td>
+                    <td> 16MB </td>
+                </tr>
+                <tr>
+                    <td> TDP </td>
+                    <td> 65W </td>
+                    <td> 65W </td>
+                    <td> 65W </td>
+                    <td> 95W </td>
+                </tr>
+                <tr>
+                    <td> Preis </td>
+                    <td> 145€ </td>
+                    <td> 165€ </td>
+                    <td> 199€ </td>
+                    <td> 218€ </td>
+                </tr>
+            </table>
+            <table class="content_details">
+                <tr>
+                    <th rowspan="10"> <img src="../pictures/amd_ryzen3.png"> </th>
+                    <th> Details </th>
+                    <th> Ryzen 3 1200 </th>
+                    <th> Ryzen 3 1300X </th>
+                </tr>
+                <tr>
+                    <td> Kerne/Threads </td>
+                    <td> 4/4 </td>
+                    <td> 4/4 </td>
+                </tr>
+                <tr>
+                    <td> Takt </td>
+                    <td> 3.10Ghz </td>
+                    <td> 3.40Ghz </td>
+                </tr>
+                <tr>
+                    <td> Turbotakt </td>
+                    <td> 3.40Ghz </td>
+                    <td> 3.70Ghz </td>
+                </tr>
+                <tr>
+                    <td> Sockel </td>
+                    <td> AM4 </td>
+                    <td> AM4 </td>
+                </tr>
+                <tr>
+                    <td> L2 Cache </td>
+                    <td> 4x 512kB </td>
+                    <td> 4x 512kB </td>
+                </tr>
+                <tr>
+                    <td> L3 Cache </td>
+                    <td> 8MB </td>
+                    <td> 8MB </td>
+                </tr>
+                <tr>
+                    <td> TDP </td>
+                    <td> 65W </td>
+                    <td> 65W </td>
+                </tr>
+                <tr>
+                    <td> Preis </td>
+                    <td> 101€ </td>
+                    <td> 122€ </td>
+                </tr>
+            </table>
+        </main>
+		<footer>          
+		</footer>
+        <nav>
+            <br>
+            <div class = "nav"> <a href="../index.html"> Home </a> </div>
+            <div class = "nav"> <a href="amd.html"> AMD </a> </div>
+            <div class = "nav"> <a href="intel.html"> Intel </a> </div>
+            <div class = "nav"> <a href="formular.html"> Formular </a> </div>
+            <hr>
+		</nav>
+	</body>
+</html>

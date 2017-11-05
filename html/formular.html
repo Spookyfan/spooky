@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Hardware - Info </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../things/style.css">
+		<script>
+			function displayNav(){
+                document.getElementsByTagName("nav")[0].style.width = "250px";
+                document.getElementsByTagName("main")[0].style.marginLeft = "250px";				
+            }
+			function closeNav(){
+                document.getElementsByTagName("nav")[0].style.width = "0px";
+                document.getElementsByTagName("main")[0].style.marginLeft = "0px";
+            }
+		</script>
+	</head>
+	<body>
+		<header onclick="closeNav()">
+			<h1> Formular </h1>
+		</header>
+        <div id="menu_icon" onclick="displayNav()">
+            <div class="menu_icon"></div>
+            <div class="menu_icon"></div>
+            <div class="menu_icon"></div>
+        </div>
+		<main onclick="closeNav()">
+            <div id="content_form">
+                <form action="formular_sent.html" method="post">
+                    <lable for="name"> Name </lable> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="name"><br><br>
+                    <lable for="vorname"> Vorname </lable>
+                    <input type="text" id="vorname"><br><br>
+                    <lable for="select"> Produkt </lable>&nbsp;
+                    <select name="select" required>
+                        <option value="Ryzen 3 1200"> Ryzen 3 1200 </option>
+                        <option value="Ryzen 3 1300X"> Ryzen 3 1300X </option>
+                        <option value="Ryzen 5 1400"> Ryzen 5 1400 </option>
+                        <option value="Ryzen 5 1500X"> Ryzen 5 1500X </option>
+                        <option value="Ryzen 5 1600"> Ryzen 5 1600 </option>
+                        <option value="Ryzen 5 1600X"> Ryzen 5 1600X </option>
+                        <option value="Ryzen 7 1700"> Ryzen 7 1700 </option>
+                        <option value="Ryzen 7 1700X"> Ryzen 7 1700X </option>
+                        <option value="Ryzen 7 1800X"> Ryzen 7 1800X </option>
+                    </select><br><br>
+                    <lable for="text"> Nachricht </lable><br>
+                    <textarea name="text" rows="10" cols="60"></textarea><br>
+                    <input type="submit" value="Senden">
+                </form>
+            </div>
+        </main>
+		<footer>           
+		</footer>
+        <nav>
+            <br>
+            <div class = "nav"> <a href="../index.html"> Home </a> </div>
+            <div class = "nav"> <a href="amd.html"> AMD </a> </div>
+            <div class = "nav"> <a href="intel.html"> Intel </a> </div>
+            <div class = "nav"> <a href="formular.html"> Formular </a> </div>
+            <hr>
+		</nav>
+	</body>
+</html>
