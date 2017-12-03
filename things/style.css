@@ -1,63 +1,18 @@
 ﻿body{
 	margin: 0%;
-	padding: 0%;
 	height: 100%;
 	width: 100%;
     background-color: #0D0D0D;
+    color: white;
 }
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
-::-webkit-scrollbar {
+::-webkit-scrollbar{
     width: 0px; 
     background: transparent; 
 }
-a {
-    color: white;
-	background-color: transparent;
-    text-decoration: none;
+html{
+    overflow: scroll;
+    overflow-x: hidden;
 }
-a:hover {
-    color: #cd3236;
-}
-main{
-	background-color: #0D0D0D;
-	color: white;
-	font-size: 30px;
-	position: absolute;
-	margin-top: 100px;
-	width: 100%;
-    height: calc(100% - 100px);
-	transition: margin-left 0.25s;
-	text-align: center;
-}
-#content_form{
-    font-size: 20px;
-    text-align: left;
-    position: relative;
-    top: 200px;
-    left: 750px;
-}
-.content{
-	position: relative;
-	background-color: #1C1C1C;
-	width: 300px;
-	height: 150px;
-	margin: 50px;
-	display: inline-block;
-}
-.content_details{
-	margin: auto auto;
-    padding: 50px;
-}
-th,td {
-    padding: 10px;
-    background-color: #1C1C1C;
-    font-size: 20px;
-    padding-right: 50px;
-    padding-left: 50px;
-}  
 header{
 	position: fixed;
 	width: 100%;
@@ -68,8 +23,76 @@ header{
 	text-align: center;
 	display: table;
 }
+nav a{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    transition: color 0.25s, background-color 0.25s;
+    display: block;
+}
+a:hover{
+    color: #cd3236; /* red */
+    background-color: #1C1C1C; /* same color as header */
+}
+nav a:first-child{
+    margin-top: 10px;
+}
+nav{
+	position: fixed;
+    width: 0px;     /* hidden bis displayNav() */
+	height: 100%;
+	top: 100px;
+	background-color: #151515;
+	text-align: center;
+	font-size: 1.5rem;
+	overflow: hidden;
+	transition: width 0.25s;
+    z-index: 1;
+}
+main{
+    font-size: 18px;
+	position: absolute;
+	margin-top: 100px;
+	width: 100%;
+    height: calc(100% - 100px);
+	transition: margin-left 0.25s;
+}
+.content_details{
+	margin: auto auto;
+    padding: 50px;
+}
+section.content{
+    width:700px;
+    margin: auto;
+    background-color: #1C1C1C;
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+    font-size: 16px;
+}
+section.content b{
+    font-size: 24px;
+}
+section:first-child{
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+figure.firmenlogo{
+    text-align: center;
+}
+th,td{
+    padding: 10px;
+    background-color: #1C1C1C;
+    font-size: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
 h1{
-	font-size: 300%;
+	font-size: 36px;
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -78,38 +101,12 @@ hr{
 	border: 0px;
 	border-top: 1px solid #8B8B8B;
 }
-nav{
-	position: fixed;
-    width: 0px;
-	height: 100%;
-	top: 100px;
-	background-color: #151515;
-	color: white;
-	text-align: center;
-	font-size: 200%;
-	overflow: scroll;
-	transition: width 0.25s;
-	display: block;
-}
-nav a{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	display: block;
-}
-.nav:hover {
-    background-color: #1C1C1C;
-}
 th img{
 	max-height: 200px;
 	min-height: 150px;
 	max-width: auto;
 	margin-left: 15px;
 	margin-right: 15px;
-}
-ul, li{
-	list-style: none;
 }
 #menu_icon{
 	position: fixed;
@@ -125,8 +122,25 @@ ul, li{
     background-color: white;
     margin: 6px 0;
 }
-@keyframes header_font{
-	33% { color: green; }
-	67% { color: blue; }
-	100% { color: red; }
+strong{
+    font-weight: normal;
+}
+form#kontakt{
+    width: 500px;;
+    margin: auto auto;
+    margin-top: 100px;
+}
+form#kontakt input,form#kontakt select,form#kontakt textarea{
+    margin-bottom: 15px;
+    display: block;
+}
+textarea{
+    min-width: 450px;
+    max-width: 700px;
+    width: 450px;
+    height: 100px;
+    min-height: 100px;
+}
+.openNav{
+    width: 200px;
 }

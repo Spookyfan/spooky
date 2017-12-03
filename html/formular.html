@@ -1,63 +1,74 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title> Hardware - Info </title>
+		<title> Hardware - Kontakt </title>
 		<meta charset="utf-8">
+        <meta name="description" lang="de" content="Dies ist eine Website für Prozessoren/CPUs">
+        <base href="127.0.0.1">
 		<link rel="stylesheet" href="../things/style.css">
-		<script>
-			function displayNav(){
-                document.getElementsByTagName("nav")[0].style.width = "250px";
-                document.getElementsByTagName("main")[0].style.marginLeft = "250px";				
-            }
-			function closeNav(){
-                document.getElementsByTagName("nav")[0].style.width = "0px";
-                document.getElementsByTagName("main")[0].style.marginLeft = "0px";
-            }
-		</script>
+        <script src="/things/javascript.js"></script>
 	</head>
 	<body>
-		<header onclick="closeNav()">
-			<h1> Formular </h1>
+		<header>
+			<h1> Kontakt </h1>
 		</header>
+        <nav>
+            <a href="/index.html"> Home </a>
+            <a href="/html/amd.html"> AMD </a>
+            <a href="/html/intel.html"> Intel </a>
+            <a href="/html/formular.html"> Kontakt </a>
+            <hr>
+		</nav>
         <div id="menu_icon" onclick="displayNav()">
             <div class="menu_icon"></div>
             <div class="menu_icon"></div>
             <div class="menu_icon"></div>
         </div>
-		<main onclick="closeNav()">
-            <div id="content_form">
-                <form action="formular_sent.html" method="post">
-                    <lable for="name"> Name </lable> &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="text" id="name"><br><br>
+		<main>
+            <form action="formular.html" method="post" id="kontakt">
+                <div> 
+                    <lable for="name"> Name </lable>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
                     <lable for="vorname"> Vorname </lable>
-                    <input type="text" id="vorname"><br><br>
-                    <lable for="select"> Produkt </lable>&nbsp;
+                    <input type="text" id="vorname" required>
+                </div>
+                <div>
+                    <lable for="product"> Produkt </lable>
+                    <input type="text" id="product" list="cpu_list" required>
+                </div>
+                <datalist id="cpu_list">
+                    <option value="Ryzen 3 1200"/>
+                    <option value="Ryzen 3 1300X"/>
+                    <option value="Ryzen 5 1400"/>
+                    <option value="Ryzen 5 1500X"/>
+                    <option value="Ryzen 5 1600"/>
+                    <option value="Ryzen 5 1600X"/>
+                    <option value="Ryzen 7 1700"/>
+                    <option value="Ryzen 7 1700X"/>
+                    <option value="Ryzen 7 1800X"/>
+                    <option value="Core i3 8100"/>
+                    <option value="Core i3 8350K"/>
+                    <option value="Core i5 8400"/>
+                    <option value="Core i5 8600K"/>
+                    <option value="Core i7 8700"/>
+                    <option value="Core i7 8700K"/>                     
+                </datalist>
+                <div>
+                    <lable for="select"> Grund für den Kontakt </lable>
                     <select name="select" required>
-                        <option value="Ryzen 3 1200"> Ryzen 3 1200 </option>
-                        <option value="Ryzen 3 1300X"> Ryzen 3 1300X </option>
-                        <option value="Ryzen 5 1400"> Ryzen 5 1400 </option>
-                        <option value="Ryzen 5 1500X"> Ryzen 5 1500X </option>
-                        <option value="Ryzen 5 1600"> Ryzen 5 1600 </option>
-                        <option value="Ryzen 5 1600X"> Ryzen 5 1600X </option>
-                        <option value="Ryzen 7 1700"> Ryzen 7 1700 </option>
-                        <option value="Ryzen 7 1700X"> Ryzen 7 1700X </option>
-                        <option value="Ryzen 7 1800X"> Ryzen 7 1800X </option>
-                    </select><br><br>
-                    <lable for="text"> Nachricht </lable><br>
-                    <textarea name="text" rows="10" cols="60"></textarea><br>
-                    <input type="submit" value="Senden">
-                </form>
-            </div>
+                        <option value="Prozessor"> Prozessor </option>
+                        <option value="Fehler"> Fehler auf der Seite </option>
+                        <option value="Sonstige"> Sonstige </option>
+                    </select>
+                </div>
+                <div>
+                    <lable for="text"> Nachricht </lable>
+                    <textarea name="text" required></textarea>
+                </div>
+                <div><input type="submit" value="Senden"></div>
+            </form>
         </main>
-		<footer>           
-		</footer>
-        <nav>
-            <br>
-            <div class = "nav"> <a href="../index.html"> Home </a> </div>
-            <div class = "nav"> <a href="amd.html"> AMD </a> </div>
-            <div class = "nav"> <a href="intel.html"> Intel </a> </div>
-            <div class = "nav"> <a href="formular.html"> Formular </a> </div>
-            <hr>
-		</nav>
 	</body>
 </html>

@@ -3,36 +3,35 @@
 	<head>
 		<title> Hardware - Info </title>
 		<meta charset="utf-8">
+        <meta name="description" lang="de" content="Dies ist eine Website für Prozessoren/CPUs">
+        <base href="127.0.0.1">
 		<link rel="stylesheet" href="../things/style.css">
-		<script>
-			function displayNav(){
-					document.getElementsByTagName("nav")[0].style.width = "250px";
-					document.getElementsByTagName("main")[0].style.marginLeft = "250px";				
-            }
-			function closeNav(){
-                    document.getElementsByTagName("nav")[0].style.width = "0px";
-                    document.getElementsByTagName("main")[0].style.marginLeft = "0px";
-                }
-		</script>
+        <script src="/things/javascript.js"></script>
 	</head>
 	<body>
-		<header onclick="closeNav()">
+		<header>
 			<h1> Prozessoren </h1>
 		</header>
+        <nav>
+            <a href="/index.html"> Home </a>
+            <a href="/html/amd.html"> AMD </a>
+            <a href="/html/intel.html"> Intel </a>
+            <a href="/html/formular.html"> Kontakt </a>
+            <hr>
+		</nav>
         <div id="menu_icon" onclick="displayNav()">
             <div class="menu_icon"></div>
             <div class="menu_icon"></div>
             <div class="menu_icon"></div>
         </div>
-        <main onclick="closeNav()">
-            <br>
-            <figure><img src="../pictures/2000px-Intel-logo.svg.png" width="200" height="120"></figure>
+        <main>
+            <figure class="firmenlogo"><img src="../pictures/2000px-Intel-logo.svg.png" width="200" height="120"></figure>
             <table class="content_details">
                 <tr>
                     <th rowspan="10"> <img src="../pictures/intel_i7.png"> </th>
                     <th> Details </th>
-                    <th> Core i7 - 8700 </th>
-                    <th> Core i7 - 8700K </th>
+                    <th> Core i7 8700 </th>
+                    <th> Core i7 8700K </th>
                 </tr>
                 <tr>
                     <td> Kerne/Threads </td>
@@ -79,8 +78,8 @@
                 <tr>
                     <th rowspan="10"> <img src="../pictures/intel_i5.png"> </th>
                     <th> Details </th>
-                    <th> Core i5 - 8400 </th>
-                    <th> Core i5 - 8600K </th>
+                    <th> Core i5 8400 </th>
+                    <th> Core i5 8600K </th>
                 </tr>
                 <tr>
                     <td> Kerne/Threads </td>
@@ -127,8 +126,8 @@
                 <tr>
                     <th rowspan="10"> <img src="../pictures/intel_i3.png"> </th>
                     <th> Details </th>
-                    <th> Core i3 - 8100 </th>
-                    <th> Core i3 - 8350K </th>
+                    <th> Core i3 8100 </th>
+                    <th> Core i3 8350K </th>
                 </tr>
                 <tr>
                     <td> Kerne/Threads </td>
@@ -172,15 +171,5 @@
                 </tr>
             </table>
         </main>
-		<footer>          
-		</footer>
-        <nav>
-            <br>
-            <div class = "nav"> <a href="../index.html"> Home </a> </div>
-            <div class = "nav"> <a href="amd.html"> AMD </a> </div>
-            <div class = "nav"> <a href="intel.html"> Intel </a> </div>
-            <div class = "nav"> <a href="formular.html"> Formular </a> </div>
-            <hr>
-		</nav>
 	</body>
 </html>

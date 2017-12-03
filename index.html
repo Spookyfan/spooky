@@ -3,41 +3,35 @@
 	<head>
 		<title> Hardware </title>
 		<meta charset="utf-8">
+        <meta name="description" lang="de" content="Dies ist eine Website für Prozessoren/CPUs">
+        <base href="127.0.0.1">
 		<link rel="stylesheet" href="things/style.css">
-		<script>
-			function displayNav(){
-					document.getElementsByTagName("nav")[0].style.width = "250px";
-					document.getElementsByTagName("main")[0].style.marginLeft = "250px";				
-            }
-			function closeNav(){
-                    document.getElementsByTagName("nav")[0].style.width = "0px";
-                    document.getElementsByTagName("main")[0].style.marginLeft = "0px";
-                }
-		</script>
+		<script src="/things/javascript.js"></script>
 	</head>
 	<body>
-		<header onclick="closeNav()">
+		<header>
 			<h1> Home </h1>
 		</header>
-        <div id="menu_icon" onclick="displayNav()">
-            <div class="menu_icon"></div>
-            <div class="menu_icon"></div>
-            <div class="menu_icon"></div>
-        </div>
-		<main onclick="closeNav()">
-            <br>
-            <p>Auf dieser Seite finden sie die Spezifikationen von gewissen Prozessoren.</p>
-            <br>
-		</main>
-		<footer>		
-		</footer>
-		<nav>
-            <br>
-            <div class = "nav"> <a href="index.html"> Home </a> </div>
-            <div class = "nav"> <a href="html/amd.html"> AMD </a> </div>
-            <div class = "nav"> <a href="html/intel.html"> Intel </a> </div>
-            <div class = "nav"> <a href="html/formular.html"> Formular </a> </div>
+        <nav>
+            <a href="./index.html"> Home </a>
+            <a href="./html/amd.html"> AMD </a>
+            <a href="./html/intel.html"> Intel </a>
+            <a href="./html/formular.html"> Kontakt</a>
             <hr>
-		</nav>
+        </nav>
+        <div id="menu_icon" onclick="displayNav()">
+                <div class="menu_icon"></div>
+                <div class="menu_icon"></div>
+                <div class="menu_icon"></div>
+        </div>
+		<main>
+            <section class="content">
+                <p>Auf dieser Seite finden sie die Spezifikationen von gewissen Prozessoren.</p>
+            </section>
+            <section class="content">
+                <p><b>Informationen:</b></p>
+                Aktuell finden sie hier nur die aktuellsten Prozessoren, das heißt von <strong>Intel</strong> nur die 8. Generation der <strong>Intel-Core-i-Serie</strong> und von <strong>AMD</strong> nur die erste Generation der <strong>Ryzen</strong> CPUs.<br>Updates folgen eventuell.
+            </section>
+		</main>
 	</body>
 </html>
