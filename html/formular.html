@@ -6,6 +6,7 @@
         <meta name="description" lang="de" content="Dies ist eine Website für Prozessoren/CPUs">
         <base href="127.0.0.1">
 		<link rel="stylesheet" href="../things/style.css">
+        <link rel="stylesheet" href="../things/form.css">
         <script src="../things/javascript.js"></script>
 	</head>
 	<body>
@@ -27,15 +28,15 @@
 		<main>
             <form action="formular.html" method="post" id="kontakt">
                 <div> 
-                    <lable for="name"> Name </lable>
+                    <label for="name"> Name </label>
                     <input type="text" id="name" required>
                 </div>
                 <div>
-                    <lable for="vorname"> Vorname </lable>
+                    <label for="vorname"> Vorname </label>
                     <input type="text" id="vorname" required>
                 </div>
                 <div>
-                    <lable for="product"> Produkt </lable>
+                    <label for="product"> Produkt </label>
                     <input type="text" id="product" list="cpu_list" required>
                 </div>
                 <datalist id="cpu_list">
@@ -56,7 +57,7 @@
                     <option value="Core i7 8700K"/>                     
                 </datalist>
                 <div>
-                    <lable for="select"> Grund für den Kontakt </lable>
+                    <label for="select"> Grund für den Kontakt </label>
                     <select name="select" required>
                         <option value="Prozessor"> Prozessor </option>
                         <option value="Fehler"> Fehler auf der Seite </option>
@@ -64,11 +65,17 @@
                     </select>
                 </div>
                 <div>
-                    <lable for="text"> Nachricht </lable>
+                    <label for="text"> Nachricht </label>
                     <textarea name="text" required></textarea>
                 </div>
-                <div><input type="submit" value="Senden"></div>
+                <button type="submit">Senden</button>
             </form>
         </main>
+        <footer>
+            <adress>
+                <p>Alexander Munschau</p>
+                <a href="mailto:amunschau@gmail.com"> amunschau@gmail.com </a>
+            </adress>
+        </footer>
 	</body>
 </html>

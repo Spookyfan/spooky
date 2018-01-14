@@ -1,0 +1,51 @@
+/*form#kontakt{
+    width: 500px;;
+    margin: auto auto;
+    margin-top: 100px;
+}
+form#kontakt input,form#kontakt select,form#kontakt textarea{
+    margin-bottom: 15px;
+    display: block;
+}
+textarea{
+    min-width: 450px;
+    max-width: 700px;
+    width: 450px;
+    height: 100px;
+    min-height: 100px;
+}*/
+form {
+    display: table;
+    margin: auto auto;
+    margin-top: 150px;
+}
+form > div {
+    display: table-row;
+}
+div label {
+    display: table-cell;
+}
+div input, div textarea, div select{
+    display: table-cell;
+    margin: 5px;
+    margin-left: 30px;
+    width: 200px;
+}
+div textarea{
+    height: 50px;
+    min-height: 50px;
+    width: 198px;
+    max-width: 198px;
+}
+div select{
+    width: 204px; 
+    /* 
+    weil normale inputs einen border und ein padding haben 
+    und es so nicht gleich groß wäre
+    */
+}
+button[type="submit"]{
+    margin-top: 15px;
+    position: relative;
+    left: 339px;
+}
